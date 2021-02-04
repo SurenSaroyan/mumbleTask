@@ -1,0 +1,14 @@
+{
+  "name": "task-mumble",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Suren Saroyan",
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/SurenSaroyan/mymbleTask.git",
+  "workspaces": [
+    "admin",
+    "client",
+    "api"
+  ]
+}

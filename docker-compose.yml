@@ -1,0 +1,20 @@
+version: "3.3"
+services:
+  admin:
+    build: ./admin
+    container_name: mumble_admin
+    ports:
+      - "3030:3030"
+  client:
+    build: ./client
+    container_name: mumble_client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+  api:
+    build: ./api
+    container_name: mumble_api
+    hostname: api
+    ports:
+      - "8000:8000"
